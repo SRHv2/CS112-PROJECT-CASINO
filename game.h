@@ -1,18 +1,16 @@
-#ifndef GAME_H 
-#define GAME_H
-
+#ifndef game_H
+#define game_H
+#include "slotmachine.h"
 #include <iostream>
-
+using namespace std;
 class Game {
 protected:
-    float winnings;
-    float losses;
+    int uses;
+    float base_bet;
+
 public:
-    static int uses;
-    Game();
-    float getWinnings();
-    float getLosses();
-    int getUses();
-    void addUses(){}
+    
+
 };
+
 #endif

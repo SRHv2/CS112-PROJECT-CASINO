@@ -6,7 +6,12 @@ using namespace std;
 //followed by ./casino to run the program
 
 int main(){
-    srand(time(0));
-    SlotMachine S1;
-    S1.Crank();
+    cout<< "-----------------------------WELCOME TO THE CASINO--------------------------------------";
+    int op;
+    string name;
+    string nickname;
+    float intitial_bal;
+    cout<<"\nPlease Enter You Information:\nName: "; cin>>name;
+    cout<<"Nickname: "; cin>>nickname;
+    cout<<"\nInitial Balance: "; cin>>intitial_bal;
 }

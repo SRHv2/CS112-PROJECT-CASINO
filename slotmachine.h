@@ -1,15 +1,17 @@
-#ifndef SLOTMACHINE_H
-#define SLOTMACHINE_H
+#ifndef SLOT_MACHINE_H
+#define SLOT_MACHINE_H
 
-#include "game.h"
+#include "Game.h"
 
-class SlotMachine : protected Game {
+class SlotMachine : public Game {
 private:
+    float winnings=0;
     char symbols[5] = {'7', '3', '1', '2', '5'};
-    float play_cost = 20;
-    bool win;
+
 public:
-    void Crank();
+    SlotMachine(); 
+    float getWinnings();
+    
 };
 
-#endif
+#endif  
